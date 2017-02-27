@@ -8,6 +8,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common aosp stuff.
 $(call inherit-product, vendor/aosp/common.mk)
 
+#Build Magisk
+ DEFAULT_ROOT_METHOD := magisk
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_gts210wifi
 PRODUCT_DEVICE := gts210wifi
